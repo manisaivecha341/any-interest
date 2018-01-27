@@ -1,0 +1,12 @@
+n=int(input())
+name=[]
+d1=[]
+for i in range(n):
+    l=input().split()
+    name.append(str(l[0]))
+    d1.append(int(l[2])-int(l[1]))
+m=max(d1)
+ind=d1.index(m)
+print(*[name[ind],m],sep=' ')
+
+#print(*[],sep=' ')
